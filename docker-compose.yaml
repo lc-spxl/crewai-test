@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # ports:
+    #   - "8080:8080"
+    volumes:
+      - .:/app # Mount the current directory to /app in the container
+    # environment:
+    #   - ENV_VAR_NAME=value # Add any environment variables here
+    # depends_on:
+    #   - database # This service depends on another service named 'database'
